@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> login page</title>
+  <style>
+  .heading{
+    text-align: center;background-color:grey; 
+   }
+   .body{
+    background-color: aqua;
+      text-align: center;
+   }
+   .login-btn{
+    background-color: green;
+    font: bold;color: white;
+   }
+   .home{
+      text-align: end;
+    }
+    .Sign-up{
+      background-color: rgb(44, 97, 141);
+    }
+  </style>
+</head>
+<body>
+  <div class="heading">
+    <h1>GUSII STADIUM TICKETING WEBSITE </h1>
+  </div>
+  <Div class="home">
+    <Label class="HOME-TXT">
+      <a href="STS.html"> HOME</a>  
+      <label class="Sign-up"> SIGN UP</label>
+    </Label>
+  </Div>
+    <br> <br>
+    <div class="body">
+  <form >
+      <label> GMAIL</label><br>
+    <button>ENTER E-MAIL</button> <input type="email" style="width:220px;" placeholder="Example: gadmomans@gmail.com">
+    <br> <br>
+    <button>ENTER PASSWORD <br></button> <br><br>
+     <button>
+      <input  type="password   " placeholder="PASSWORD" id="password  "/>
+       <img src="crossed eye.png" style="height: 15px" id="eyeicon" />
+      </button>
+  </button>
+</div>
+
+<script>
+  let eyeicon = document.getElementById("eyeicon");
+  let password = document.getElementById("password");
+  eyeicon.onclick = function () {
+    if (password.type == "password") {
+      password.type = "text";
+      eyeicon.src = "openeye.svg";
+    } else {
+      password.type = "password";
+      eyeicon.src = "openeye.svg";
+    }
+  };
+</script>
+    <br><br><br>
+    <button class="login-btn">click here to : <a href="W HOME.html">login</a>
+    </button>
+  </form>
+</div> <br>
+<div style="padding: 20px;">
+<button style="background-color: orangered;"> 
+  forgort password
+</button> <br>
+</div>
+</body>
+</html>
